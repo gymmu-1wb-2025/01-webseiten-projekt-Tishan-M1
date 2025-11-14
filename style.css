@@ -1,0 +1,33 @@
+header,
+nav,
+main,
+footer {
+  border: 1px solid black;
+}
+
+nav {
+  background-color: bisque;
+  margin-right: 400px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.flex-wrapper > div {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
