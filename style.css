@@ -6,8 +6,19 @@ footer {
 }
 
 nav {
-  background-color: bisque;
+  background-color: rgb(255, 255, 255);
   margin-right: 400px;
+  padding-inline: 2rem;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  margin: 0;
 }
 
 header {
