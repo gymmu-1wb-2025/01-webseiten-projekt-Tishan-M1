@@ -1,10 +1,9 @@
 console.log("Meine Webseite");
 let counter = 0;
-function createNewElement() {
-  letNewElement = document.createElement("h1");
+
+function increaseCount() {
+  let newElement = document.querySelector("#counter");
 
   counter = counter + 1;
-  newElement.textContent = "Element" + "counter";
-  let mainElement = document.querySelector("header");
-  titleElement.textContent;
+  newElement.textContent = counter;
 }
