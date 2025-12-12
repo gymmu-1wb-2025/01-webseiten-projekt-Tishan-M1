@@ -1,9 +1,17 @@
-console.log("Meine Webseite");
-let counter = 0;
+let titleElement = document.querySelector("#Start");
+
+let originalTitle = titleElement.textContent;
+
+let count = 0;
 
 function increaseCount() {
-  let newElement = document.querySelector("#counter");
+  count = count + 1;
 
-  counter = counter + 1;
-  newElement.textContent = counter;
+  titleElement.textContent = originalTitle + " (" + count + ")";
 }
+
+document.addEventListener("keydown", increaseCount);
+
+titleElement.addEventListener("click", increaseCount);
+
+setInterval(increaseCount, 1000);
