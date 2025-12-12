@@ -1,5 +1,4 @@
 header,
-nav,
 main,
 footer {
   border: 1px solid black;
@@ -7,7 +6,6 @@ footer {
 
 nav {
   background-color: rgb(255, 255, 255);
-  margin-right: 400px;
   padding-inline: 2rem;
 }
 
