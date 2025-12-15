@@ -81,3 +81,48 @@ body {
 main {
   overflow-y: scroll;
 }
+
+section {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--section-color);
+}
+
+section:nth-child(2n) {
+  background-color: hsl(from var(--section-color) h s calc(1 - 20));
+}
+
+.color-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.color-list > li {
+  border: 1px dashed rgb(141, 15, 36);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+}
+
+.svg-red circle {
+  fill: red;
+}
+
+.svg-green circle {
+  stroke: green;
+  stroke-width: 2;
+  fill: none;
+}
+
+:root {
+  --section-color: ;
+}
