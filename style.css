@@ -3,6 +3,9 @@ main,
 header {
   font-family: Helvetica, sans-serif;
 }
+:root {
+  --section-color: white;
+}
 
 footer {
   border: 1px solid rgb(196, 152, 152);
@@ -121,8 +124,4 @@ section:nth-child(2n) {
   stroke: green;
   stroke-width: 2;
   fill: none;
-}
-
-:root {
-  --section-color: ;
 }
