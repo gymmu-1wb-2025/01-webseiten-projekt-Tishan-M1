@@ -125,3 +125,36 @@ section:nth-child(2n) {
   stroke-width: 2;
   fill: none;
 }
+
+.Dreieck {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+
+.Kreis {
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 1;
+}
+
+.Quadrat {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+.X {
+  stroke: black;
+  stroke-width: 1;
+}
+
+/* Ersten muss hat sich auf der Seite die Farebn verändert
+aside hat sich verschoben
+oben die icon sind nicht auf der gleichen ebene
+fragen wie man notizen machen muss
+wie man macht was man auf das kreis clicken kann
+bild einfügen
+Schriftart muss afûf der Seite anders sein
+Alle fehler korrigieren
+
+*/
