@@ -1,0 +1,208 @@
+.header {
+  font-family: Helvetca, sans-serif;
+  text-align: center;
+}
+/* Hier wird im Header der Text zentriert und die Schrift art bestimmt    */
+:root {
+  --section-color: white;
+}
+/*Das legt eine Allgemeine Farbvariabel fest welche dann auf die ganze seite angewendet werden kann    */
+footer {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/*  Man macht das der footer dadruch einen weissen Element bekommt . Und der Border steht für den rahmen also 1px */
+
+nav {
+  background-color: beige;
+  padding-inline: 2rem;
+}
+/*   background-color setzt die farbe auf beige und das padding ist da um einen Abstand von 2 Rem zu erstellen*/
+nav > ul {
+  list-style: none;
+  margin: 0;
+  background-color: beige;
+}
+/*Dadurch wird die Aufzählungsliste enftert der margin auf 0 gesetzt also den Aussenabstand und wieder die Farbe auf beige  */
+
+nav > ul > li {
+  margin: 0;
+}
+/* entfernt die Standartabstände zwischen den Elementen  */
+
+header {
+  margin: none;
+  padding: none;
+  background-color: beige;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Durch diese beiden Header hat der Header einen beigen Hintergrund, keine Abstände weil er auf 0 gesetzt ist und einen gleichmässigen Abstand */
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.flex-wrapper > div {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+
+  & > header {
+    grid-area: header;
+  }
+
+  & > aside {
+    grid-area: aside;
+  }
+
+  & > main {
+    grid-area: main;
+  }
+
+  & > footer {
+    grid-area: footer;
+  }
+} /*  Gibt den bestimmten Layout an für die Seite  */
+
+.header {
+  height: 100pt;
+}
+
+main {
+  overflow-y: scroll;
+  text-align: center;
+}
+/*Dadurch kann man auf der Webseite scrollen    */
+
+section {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  background-color: var(--section-color);
+}
+/*  Macht eine dunklere Version der Basis Farbe    */
+section:nth-child(2n) {
+  background-color: hsl(from var(--section-color) h s calc(l - 20));
+}
+
+.color-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.color-list > li {
+  border: 1px dashed rgb(141, 15, 36);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+}
+/* Diese beiden Codes für den Color-list sind da um eine Box um den Kreiszu machen welches benutz wird um die Farbe der Webseite zu ändern und noch dabei verschiedenste Sachen wie Abstand ect. zu machen   */
+
+.svg-red circle {
+  fill: red;
+}
+/*  Hier hat der bestimmte kreis eine Rote Farbe  */
+circle {
+  stroke: rgb(39, 101, 39);
+  stroke-width: 2;
+  fill: none;
+}
+/* Das ist mit dem bestimmten class im index verbunden wodurch sie die bestimte Farbe und die bestimmten angaben hat.   */
+
+.Dreieck {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+/* Diese Codes passen die verschiedenen Farben, und ob es das Icon gefüllt oder nicht ist . Diese wurden in den von ihnen bestimmten Ort angegeben  */
+
+.Kreis {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+} /* Diese Codes passen die verschiedenen Farben, und ob es das Icon gefüllt oder nicht ist . Diese wurden in den von ihnen bestimmten Ort angegeben  */
+
+.Quadrat {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+} /* Diese Codes passen die verschiedenen Farben, und ob es das Icon gefüllt oder nicht ist . Diese wurden in den von ihnen bestimmten Ort angegeben  */
+
+.X {
+  stroke: black;
+  stroke-width: 1;
+} /* Diese Codes passen die verschiedenen Farben, und ob es das Icon gefüllt oder nicht ist . Diese wurden in den von ihnen bestimmten Ort angegeben  */
+
+.Haus {
+  color: black;
+} /* Diese Codes passen die verschiedenen Farben, und ob es das Icon gefüllt oder nicht ist . Diese wurden in den von ihnen bestimmten Ort angegeben  */
+
+.aside {
+  padding: 0;
+  margin: 0;
+  background-color: #f5deb3;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 25pt;
+}
+
+aside > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  background-color: beige;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  text-align: center;
+} /* Der Fotter bekommt dadurch eine Farbe und wird grössergemacht    */
+
+.section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Mit dem Code kann man die grössse des Bildes angebene    */
+.Ali-Bild {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
+}
+/* Mit dem Code kann man die grössse des Bildes angebene    */
+/* Rest selbst erklärend */
