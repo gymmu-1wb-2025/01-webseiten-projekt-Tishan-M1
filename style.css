@@ -1,14 +1,12 @@
-header,
-main,
-header {
-  font-family: Helvetica, sans-serif;
+.header {
+  font-family: Helvetca, sans-serif;
 }
 :root {
   --section-color: white;
 }
 
 footer {
-  border: 1px solid rgb(196, 152, 152);
+  border: 1px solid rgb(255, 255, 255);
 }
 
 nav {
@@ -42,7 +40,7 @@ header {
 .flex-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 8px;
   align-items: normal;
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -81,6 +79,10 @@ body {
   }
 }
 
+.header {
+  height: 100pt;
+}
+
 main {
   overflow-y: scroll;
 }
@@ -91,12 +93,12 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem;
+  padding: 0;
   background-color: var(--section-color);
 }
 
 section:nth-child(2n) {
-  background-color: hsl(from var(--section-color) h s calc(1 - 20));
+  background-color: hsl(from var(--section-color) h s calc(l - 20));
 }
 
 .color-list {
@@ -134,7 +136,7 @@ section:nth-child(2n) {
 
 .Kreis {
   fill: none;
-  stroke: rgb(0, 0, 0);
+  stroke: black;
   stroke-width: 1;
 }
 
@@ -148,6 +150,17 @@ section:nth-child(2n) {
   stroke-width: 1;
 }
 
+.aside {
+  padding: 0;
+  margin: 0;
+  background-color: beige;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-size: 25pt;
+}
+
 /* Ersten muss hat sich auf der Seite die Farebn verändert
 aside hat sich verschoben
 oben die icon sind nicht auf der gleichen ebene
@@ -158,3 +171,8 @@ Schriftart muss afûf der Seite anders sein
 Alle fehler korrigieren
 Home muss noch gemacht werden
 */
+
+aside > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
