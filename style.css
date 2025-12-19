@@ -152,6 +152,10 @@ section:nth-child(2n) {
   stroke-width: 1;
 }
 
+.Haus {
+  color: black;
+}
+
 .aside {
   padding: 0;
   margin: 0;
