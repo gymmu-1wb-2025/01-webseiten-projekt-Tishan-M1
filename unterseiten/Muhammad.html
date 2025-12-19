@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="../style.css">
 
-    <script src="./main.js" defer></script>
+    <script src="../main.js" defer></script>
   </head>
   <body>
     <header>
@@ -47,42 +47,25 @@
         </ul>
       </nav>
     </header>
-    <aside>
-      <section>
-        <h2 id="Start">Timer </h2>
-        <p>
+    <aside class="aside">
+      <h2 id="Start">Timer </h2>
+      <ul>
+        <li>
           <a href="/index.html">Home</a>
-        </p>
-        <p>
+        </li>
+        <li>
           <a href="./MikeTyson.html">Mike Tyson</a>
-        </p>
-        <p>
+        </li>
+        <li>
           <a href="./Muhammad.html">Muhammad Ali</a>
-        </p>
-        <p>
+        </li>
+        <li>
           <a href="./Jon Jones.html">Jon Jones</a>
-        </p>
-      </section>
+        </li>
+      </ul>
     </aside>
+
     <main>
-      <section id="colors">
-        <h2>Farben anpassen</h2>
-        <p>Wählen Sie eine dieser Farben als Basis für die Webseite</p>
-        <ul class="color-list" onclick="changeColor('red')">
-          <li class="svg-red">
-            <svg viewBox="0 0 10 10" width="1.5em">
-              <circle cx="5" cy="5" r="5"/>
-            </svg>
-            <span>Rot</span>
-          </li>
-          <li class="svg-green" onclick="changeColor('green')">
-            <svg viewBox="0 0 10 10" width="1.5em">
-              <circle cx="5" cy="5" r="5"/>
-            </svg>
-            <span>Grün</span>
-          </li>
-        </ul>
-      </section>
       <section id="wer ist mike tyson?">
         <h2>Wer ist Mike Tyson</h2>
         <p>Abschnitte haben immer einen Titel und dann den Text.</p>
@@ -111,7 +94,26 @@
           einen Link angeben, wie zum Beispiel zu den
         </p>
       </section>
+      <section id="colors">
+        <h2>Farben anpassen</h2>
+        <p>Wählen Sie eine dieser Farben als Basis für die Webseite</p>
+        <ul class="color-list">
+          <li class="svg-red" onclick="changeColor('red')">
+            <svg viewBox="0 0 10 10" width="1.5em">
+              <circle cx="5" cy="5" r="5"/>
+            </svg>
+            <span>Rot</span>
+          </li>
+
+          <li class="svg-green" onclick="changeColor('#90EE90')">
+            <svg viewBox="0 0 10 10" width="1.5em">
+              <circle cx="5" cy="5" r="5"/>
+            </svg>
+            <span>Grün</span>
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer>Meine Webseite</footer>
+    <footer>Webseite von Tishan</footer>
   </body>
 </html>

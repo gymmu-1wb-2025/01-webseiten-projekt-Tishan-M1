@@ -1,5 +1,6 @@
 .header {
   font-family: Helvetca, sans-serif;
+  text-align: center;
 }
 :root {
   --section-color: white;
@@ -85,6 +86,7 @@ body {
 
 main {
   overflow-y: scroll;
+  text-align: center;
 }
 
 section {
@@ -123,7 +125,7 @@ section:nth-child(2n) {
 }
 
 .svg-green circle {
-  stroke: green;
+  stroke: rgb(39, 101, 39);
   stroke-width: 2;
   fill: none;
 }
@@ -153,7 +155,7 @@ section:nth-child(2n) {
 .aside {
   padding: 0;
   margin: 0;
-  background-color: beige;
+  background-color: #e2d6c3;
 }
 
 .title {
@@ -175,4 +177,19 @@ Home muss noch gemacht werden
 aside > ul > li > a {
   text-decoration: none;
   color: black;
+}
+
+footer {
+  background-color: beige;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
