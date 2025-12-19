@@ -179,17 +179,24 @@ aside > ul > li > a {
   color: black;
 }
 
-footer {
+.footer {
   background-color: beige;
   padding: 5px 0;
   font-size: 1.2rem;
   text-align: center;
 }
 
-section img {
+.section img {
   max-width: 80%;
   height: auto;
   border-radius: 10px;
   margin-top: 1em;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Ali-Bild {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
 }
