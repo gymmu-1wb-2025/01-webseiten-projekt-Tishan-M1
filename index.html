@@ -11,6 +11,7 @@
   </head>
   <body>
     <header>
+      <!-- Im body kommt alles rein was auf der Seite sichtbar oder auch nicht sichtbar sein soll und im header wird der oberste bereich auf der Seite wo dan meisten der Titel und Navigationleiste bei mir vorkommt und auch Icons-->
       <h1>Der Weg des Kampfsportes</h1>
       <nav>
         <ul class="flex-wrapper">
@@ -18,30 +19,35 @@
             <svg viewBox="0 0 10 10" width="1.5em" height="1.5em" class="icon">
               <rect x="1" y="1" width="8" height="8" class="Quadrat"/>
             </svg>
+            <!--Hier bei dem Icon hab ich zuerst das ein svg geöffnet weil da die Icon hinein kommen. Das viewBox gibt das Kordinatensystem an in dem ich so gesagt zeichnen kann. Die grösse mit dem width. Dann um einen rechteck zu machen <rect. X= Starpunkt Y= Startpunkt vertikal. Width= Breite und Height die Höhe. Dazu habe ich eine class gemacht damit ich die Farbe im CSS veränder kann ect. -->
             <a href="#warum-kampfsport">
               Warum habe ich mich für Kampfsport entschieden?
+              <!-- hier habe ich einen Link gemacht welche dann auf der gleichen Seite ist und auf den weiteren Folgenden href springt( unten mehr)-->
             </a>.
           </li>
         </ul>
       </nav>
     </header>
+    <!--  Hier wird alles was im Header kommt rein geschrieben also im Header. h1= der Titel ( gross). Nav ist dazu da eine Navigationsliste wo drin dann noch eine ungelistete Liste und eine gelistete Lieste ist, diese wurden dann geschlossen-->
     <aside class="aside">
       <h2 id="Start">Timer </h2>
+      <!-- Hier habe ich eine Id gemacht wodurch ich im Javaskript einen Code schreiben konnte was zu einen laufenden Timer führte welches auf der Webseite angezeigt wird: erklärung im main.js -->
       <ul>
         <li>
           <a href="../index.html">Home</a>
           <svg viewBox="0 0 10 10" width="1.5em" height="1.5em" class="icon">
-            <polygon points="5,1 1,4 9,4" class="Dach"/>
-            <rect x="2" y="4" width="6" height="5" class="Haus"/>
+            <polygon points="5,1 1,4 9,4" class="icon"/>
+            <rect x="2" y="4" width="6" height="5" class="icon"/>
           </svg>
         </li>
-
+        <!-- Wiederholung mit Class ( steht oben ) (Der erste teil des Icon steht oben)  Hier wollte ich ein Haus machen dazu habe ich ein Rechteck gemacht (steht oben wie) jedoch was neu ist um das Dreieck zu machen. Polygon habe ich benutz um mehrer Punkte anzugeben welche ich dann hinten defniert habe wodurch ich ein Dreieck machen konnt( mit Viedeotutorial)-->
         <li>
           <a href="./unterseiten/MikeTyson.html">Mike Tyson</a>
 
           <svg viewBox="0 0 10 10" width="1.5em" height="1.5em" class="icon">
             <ellipse cx="5" cy="5" rx="4" ry="3"/>
           </svg>
+          <!-- hier ist es fast wieder gleich aber hier wollte ich ein ellipse machen dazu habe ich cx und cy benutz wie bei einem Kreiss dazu haben ich noch rx und ry benutz um den Radius zu veränder um die ellipsen Form zu kriegen.-->
         </li>
         <li>
           <a href="./unterseiten/Muhammad.html">Muhammad Ali</a>
@@ -49,10 +55,12 @@
             <ellipse cx="5" cy="7" rx="4" ry="1"/>
             <rect x="2" y="3" width="6" height="4"/>
             <ellipse cx="5" cy="3" rx="4" ry="1"/>
+            <!-- Hier wurde einfach wie oben erklärt 2 ellpsen gemacht 1 oben 1 unten und in der mitte ein rechteck ( oben wieder erklärung)-->
           </svg>
         </li>
       </ul>
     </aside>
+    <!-- Hier wurden im Aside verschieden Unterseiten hinzugefügt damit man auf die Unterseiten kommt wo dann mein Haupteil ist. Dazu kommen Icons und ein Timer. Das geht  <a href="./unterseiten/Muhammad.html"><a> eingibt und dabei z.b bei einem fall bei Muhammad.html das ist der name der Unterseite eingibt.Bei Index ist es bischen anderes da muss man dann  <a href="../index.html"></a> eingeben weil das die  Startseite ist.-->
     <main>
       <section id="wer-ist-mike-tyson">
         <h2>Kampfsport</h2>
@@ -61,8 +69,10 @@
           alt="Mike Tyson"
           class="Ali-Bild"
         >
+        <!-- Hier wurde eine ein Bild eingefügt das geht mit dem Folgenden code oben da muss dann nur noch die Bild adresse hinzugefügt werden, nochmal eine class um damit im CSS das Aussehen zu ändern-->
         <p>Hier sieht ihr ein Bild von Mike Tyson im Kampf</p>
       </section>
+      <!-- Hier wurde unten die oben gemachte Href... mit der einer id verbunden so das wenn man auf den Link drück direkt runter geschickt wird. Dazu kommt einfach nur nochmal ein kleinere Titel wo das Text hinzugefügt wurde mit <p> und dann der text und geschlossen wurd mit </p>  -->
       <section id="warum-kampfsport">
         <h2>Warum habe ich mich für Kampfsport entschieden</h2>
         <p>
@@ -72,23 +82,16 @@
           Besonders im Boxen sieht man, wie wichtig Selbstkontrolle und
           Konzentration sind, um erfolgreich zu sein.
         </p>
-        <p>
-          Für mein Thema habe ich mir zwei sehr bekannte Boxer ausgesucht: Mike
-          Tyson und Muhammad Ali. Beide sind Legenden des Boxsports, hatten aber
-          sehr unterschiedliche Persönlichkeiten und Kampfstile. Mike Tyson war
-          vor allem für seine enorme Schlagkraft, Aggressivität und schnellen
-          Knockouts bekannt. Muhammad Ali hingegen überzeugte durch seine
-          Schnelligkeit, seine Technik und seine mentale Stärke sowie durch
-          seine Bedeutung außerhalb des Sports.
-        </p>
-        <p>
-          Ich finde es spannend, diese beiden Boxer zu vergleichen, weil sie
-          zeigen, wie unterschiedlich Erfolg im Kampfsport aussehen kann. Beide
-          haben den Boxsport weltweit geprägt und sind bis heute Vorbilder für
-          viele Sportler. Deshalb habe ich mich bewusst für dieses Thema und
-          diese beiden Boxer entschieden.
-        </p>
+        Für mein Thema habe ich mir zwei sehr bekannte Boxer ausgesucht: Mike
+        Tyson und Muhammad Ali. Beide sind Legenden des Boxsports, hatten aber
+        sehr unterschiedliche Persönlichkeiten und Kampfstile. Mike Tyson war
+        vor allem für seine enorme Schlagkraft, Aggressivität und schnellen
+        Knockouts bekannt. Muhammad Ali hingegen überzeugte durch seine
+        Schnelligkeit, seine Technik und seine mentale Stärke sowie durch seine
+        Bedeutung außerhalb des Sports.
       </section>
+
+      <!-- Hier sind wieder 2 class gemacht welche mit einen welche im css verbunden sind wo dann die farbe ausgewählt werden kann. Hier wurd  onclick benutz wodurch ein sich die seite in die folgende gecodete Farbe ändert. wenn man jetzt auf den Kreis drückt welcher entsteht dückt ändert sich dabei die Farbe in die gewünschte Farbe. Hier wurden auch noch 2 circles gemacht dazu muss man <circle benutzen und dann cx,cy und r benutzen weil es ein Kreis ist. ( Der rest wurd schon oben erklärt) -->
       <section id="colors">
         <h2>Farben anpassen</h2>
         <p>Wählen Sie eine dieser Farben als Basis für die Webseite</p>
@@ -110,5 +113,7 @@
       </section>
     </main>
     <footer class="footer">Webseite von Tishan</footer>
+    <!-- Eine class gemacht damit man sie im Css verändern kann-->
   </body>
 </html>
+<!-- Am Ende muss der html, body und auch main geschlossen werden-->
