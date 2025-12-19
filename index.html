@@ -11,34 +11,16 @@
   </head>
   <body>
     <header>
-      <h1>Webseite über Mike Tyson</h1>
+      <h1>Der Weg des Kampfsportes</h1>
       <nav>
         <ul class="flex-wrapper">
           <li>
             <svg viewBox="0 0 10 10" width="1.5em" height="1.5em" class="icon">
               <rect x="1" y="1" width="8" height="8" class="Quadrat"/>
             </svg>
-            <a href="#wer ist mike tyson?"> Wer ist Mike Tyson?</a>.
-          </li>
-          <li>
-            <svg viewBox="0 0 10 10" width="1.5em" height="1.5em" class="icon">
-              <polygon points="5,1 9,9 1,9" class="Dreieck"/>
-            </svg>
-            <a href="#biographie">Biografie von Mike Tyson</a>.
-          </li>
-
-          <li>
-            <svg viewBox="0 0 10 10" width="1.5em" height="1.5em" class="icon">
-              <line x1="1" y1="1" x2="9" y2="9" class="X"/>
-              <line x1="9" y1="1" x2="1" y2="9" class="X"/>
-            </svg>
-            <a href="#kampfstil">Kampfstil</a>.
-          </li>
-          <li>
-            <svg viewBox="0 0 10 10" width="1.5em" height="1.5em" class="icon">
-              <circle cx="5" cy="5" r="4" class="Kreis"/>
-            </svg>
-            <a href="#leben-Heute">So lebt Mike Tyson heute</a>.
+            <a href="#warum-kampfsport">
+              Warum habe ich mich für Kampfsport entschieden?
+            </a>.
           </li>
         </ul>
       </nav>
@@ -55,51 +37,56 @@
         <li>
           <a href="./unterseiten/Muhammad.html">Muhammad Ali</a>
         </li>
-        <li>
-          <a href="./unterseiten/Jon Jones.html">Jon Jones</a>
-        </li>
       </ul>
     </aside>
     <main>
-      <section id="wer ist mike tyson?">
-        <h2>Wer ist Mike Tyson</h2>
-        <p>Abschnitte haben immer einen Titel und dann den Text.</p>
+      <section id="wer-ist-mike-tyson">
+        <h2>Kampfsport</h2>
+        <img
+          src="https://i.pinimg.com/736x/34/6f/a1/346fa1b695225f6b8206c37940cee6d9.jpg"
+          alt="Mike Tyson"
+          class="tyson-img"
+        >
+        <p>Hier sieht ihr ein Bild von Mike Tyson im Kampf</p>
       </section>
-
-      <section id="biographie">
-        <h2>Biographie</h2>
-        <p>Abschnitte haben immer einen Titel und dann den Text.</p>
-      </section>
-
-      <section id="kampfstil">
-        <h2>Kampfstil</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
-
-      <section id="leben-Heute">
-        <h2>So lebt Mike Tyson heute</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
-      <section>
-        <h2>Unterseiten verlinken</h2>
+      <section id="warum-kampfsport">
+        <h2>Warum habe ich mich für Kampfsport entschieden</h2>
         <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
+          Ich habe mich für das Thema Kampfsport entschieden, weil mich diese
+          Sportart schon lange interessiert. Kampfsport erfordert nicht nur
+          Kraft, sondern auch Disziplin, Technik, Ausdauer und mentale Stärke.
+          Besonders im Boxen sieht man, wie wichtig Selbstkontrolle und
+          Konzentration sind, um erfolgreich zu sein.
+        </p>
+        <p>
+          Für mein Thema habe ich mir zwei sehr bekannte Boxer ausgesucht: Mike
+          Tyson und Muhammad Ali. Beide sind Legenden des Boxsports, hatten aber
+          sehr unterschiedliche Persönlichkeiten und Kampfstile. Mike Tyson war
+          vor allem für seine enorme Schlagkraft, Aggressivität und schnellen
+          Knockouts bekannt. Muhammad Ali hingegen überzeugte durch seine
+          Schnelligkeit, seine Technik und seine mentale Stärke sowie durch
+          seine Bedeutung außerhalb des Sports.
+        </p>
+        <p>
+          Ich finde es spannend, diese beiden Boxer zu vergleichen, weil sie
+          zeigen, wie unterschiedlich Erfolg im Kampfsport aussehen kann. Beide
+          haben den Boxsport weltweit geprägt und sind bis heute Vorbilder für
+          viele Sportler. Deshalb habe ich mich bewusst für dieses Thema und
+          diese beiden Boxer entschieden.
         </p>
       </section>
       <section id="colors">
         <h2>Farben anpassen</h2>
         <p>Wählen Sie eine dieser Farben als Basis für die Webseite</p>
-        <ul class="color-list" onclick="changeColor('red')">
-          <li class="svg-red">
+        <ul class="color-list">
+          <li class="svg-red" onclick="changeColor('red')">
             <svg viewBox="0 0 10 10" width="1.5em">
               <circle cx="5" cy="5" r="5"/>
             </svg>
             <span>Rot</span>
           </li>
-          <li class="svg-green" onclick="changeColor('green')">
+
+          <li class="svg-green" onclick="changeColor('#90EE90')">
             <svg viewBox="0 0 10 10" width="1.5em">
               <circle cx="5" cy="5" r="5"/>
             </svg>
@@ -108,6 +95,6 @@
         </ul>
       </section>
     </main>
-    <footer>Meine Webseite</footer>
+    <footer class="footer">Webseite von Tishan</footer>
   </body>
 </html>
